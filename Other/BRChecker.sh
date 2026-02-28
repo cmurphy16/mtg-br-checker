@@ -8,6 +8,7 @@ test_urls() {
             xdg-open $url
             echo $url | wl-copy
             found_url="true"
+            return 0
         else
             echo "$response: Not up yet."
         fi
